@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Appets.Domain\Appets.Domain.csproj" />
+    <ProjectReference Include="..\Appets.BusinessLogic.Interface\Appets.BusinessLogic.Interface.csproj" />
+    <ProjectReference Include="..\Appets.DataAccess.Interface\Appets.DataAccess.Interface.csproj" />
+    <ProjectReference Include="..\Appets.Exceptions\Appets.Exceptions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
