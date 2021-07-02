@@ -37,8 +37,8 @@ namespace Appets.WebApi
 
             services.AddDbContext<DbContext, AppetsContext>(options =>
 
-    options.UseSqlServer(@"Server=" + Configuration["SQLServer"] + ";Database=Appets;Trusted_Connection=True;MultipleActiveResultSets=True;"));
-    //options.UseSqlServer($"Server={server},{port};Database={database};User ID ={user};Password={password};"));
+    //options.UseSqlServer(@"Server=" + Configuration["SQLServer"] + ";Database=Appets;Trusted_Connection=True;MultipleActiveResultSets=True;"));
+    options.UseSqlServer($"Server={server},{port};Database={database};User ID ={user};Password={password};"));
 
 
             // DataAccess interfaces
